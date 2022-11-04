@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		F6849C2B29158B6C006C9125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849C2A29158B6C006C9125 /* AppDelegate.swift */; };
 		F6849C2D29158B6C006C9125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849C2C29158B6C006C9125 /* SceneDelegate.swift */; };
-		F6849C2F29158B6C006C9125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849C2E29158B6C006C9125 /* ViewController.swift */; };
-		F6849C3229158B6C006C9125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6849C3029158B6C006C9125 /* Main.storyboard */; };
+		F6849C2F29158B6C006C9125 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849C2E29158B6C006C9125 /* TabBarController.swift */; };
 		F6849C3429158B6D006C9125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6849C3329158B6D006C9125 /* Assets.xcassets */; };
 		F6849C3729158B6D006C9125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6849C3529158B6D006C9125 /* LaunchScreen.storyboard */; };
+		F6849C3F29158E90006C9125 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F6849C3E29158E90006C9125 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6849C2729158B6C006C9125 /* Sleeping Baby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleeping Baby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6849C2A29158B6C006C9125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6849C2C29158B6C006C9125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6849C2E29158B6C006C9125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6849C3129158B6C006C9125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6849C2E29158B6C006C9125 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F6849C3329158B6D006C9125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6849C3629158B6D006C9125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6849C3829158B6D006C9125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6849C3E29158E90006C9125 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				F6849C2929158B6C006C9125 /* Sleeping Baby */,
+				F6849C3E29158E90006C9125 /* .gitignore */,
 				F6849C2829158B6C006C9125 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +57,54 @@
 		F6849C2929158B6C006C9125 /* Sleeping Baby */ = {
 			isa = PBXGroup;
 			children = (
-				F6849C2A29158B6C006C9125 /* AppDelegate.swift */,
-				F6849C2C29158B6C006C9125 /* SceneDelegate.swift */,
-				F6849C2E29158B6C006C9125 /* ViewController.swift */,
-				F6849C3029158B6C006C9125 /* Main.storyboard */,
-				F6849C3329158B6D006C9125 /* Assets.xcassets */,
-				F6849C3529158B6D006C9125 /* LaunchScreen.storyboard */,
-				F6849C3829158B6D006C9125 /* Info.plist */,
+				F6849C4429158F42006C9125 /* Components */,
+				F6849C4029158EC9006C9125 /* Scenes */,
+				F6849C4329158F0E006C9125 /* Settings */,
 			);
 			path = "Sleeping Baby";
+			sourceTree = "<group>";
+		};
+		F6849C4029158EC9006C9125 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F6849C4229158EF6006C9125 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F6849C4129158EE0006C9125 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F6849C3529158B6D006C9125 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		F6849C4229158EF6006C9125 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F6849C4129158EE0006C9125 /* LaunchScreen */,
+				F6849C2E29158B6C006C9125 /* TabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F6849C4329158F0E006C9125 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F6849C2A29158B6C006C9125 /* AppDelegate.swift */,
+				F6849C2C29158B6C006C9125 /* SceneDelegate.swift */,
+				F6849C3829158B6D006C9125 /* Info.plist */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F6849C4429158F42006C9125 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F6849C3329158B6D006C9125 /* Assets.xcassets */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6849C3729158B6D006C9125 /* LaunchScreen.storyboard in Resources */,
+				F6849C3F29158E90006C9125 /* .gitignore in Resources */,
 				F6849C3429158B6D006C9125 /* Assets.xcassets in Resources */,
-				F6849C3229158B6C006C9125 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6849C2F29158B6C006C9125 /* ViewController.swift in Sources */,
+				F6849C2F29158B6C006C9125 /* TabBarController.swift in Sources */,
 				F6849C2B29158B6C006C9125 /* AppDelegate.swift in Sources */,
 				F6849C2D29158B6C006C9125 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F6849C3029158B6C006C9125 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6849C3129158B6C006C9125 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F6849C3529158B6D006C9125 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,13 +248,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -270,12 +303,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -289,12 +323,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HV5PMLH7Y7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sleeping Baby/Info.plist";
+				INFOPLIST_FILE = "Sleeping Baby/Settings/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sleeping Baby";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +339,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kostyukhin.Sleeping-Baby";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +357,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HV5PMLH7Y7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Sleeping Baby/Info.plist";
+				INFOPLIST_FILE = "Sleeping Baby/Settings/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sleeping Baby";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +373,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kostyukhin.Sleeping-Baby";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
