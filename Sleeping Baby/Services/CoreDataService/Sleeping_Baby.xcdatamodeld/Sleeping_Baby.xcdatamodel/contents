@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Feeding" representedClassName="Feeding" syncable="YES" codeGenerationType="category">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="note" attributeType="String" defaultValueString=""/>
+        <attribute name="start" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" attributeType="String" defaultValueString="leftBreast"/>
+        <relationship name="sleep" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Sleep" inverseName="feedings" inverseEntity="Sleep"/>
+        <relationship name="wake" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Wake" inverseName="feedings" inverseEntity="Wake"/>
+    </entity>
+    <entity name="Kid" representedClassName="Kid" syncable="YES" codeGenerationType="category">
+        <attribute name="birthDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString="Child"/>
+        <attribute name="photoData" optional="YES" attributeType="Binary"/>
+        <relationship name="nightTime" maxCount="1" deletionRule="Cascade" destinationEntity="NightTime" inverseName="kid" inverseEntity="NightTime"/>
+        <relationship name="sleeps" toMany="YES" deletionRule="Cascade" destinationEntity="Sleep" inverseName="kid" inverseEntity="Sleep"/>
+        <relationship name="wakes" toMany="YES" deletionRule="Cascade" destinationEntity="Wake" inverseName="kid" inverseEntity="Wake"/>
+    </entity>
+    <entity name="NightTime" representedClassName="NightTime" syncable="YES" codeGenerationType="category">
+        <attribute name="end" attributeType="Date" defaultDateTimeInterval="665384400" usesScalarValueType="NO"/>
+        <attribute name="start" attributeType="Date" defaultDateTimeInterval="662738400" usesScalarValueType="NO"/>
+        <relationship name="kid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kid" inverseName="nightTime" inverseEntity="Kid"/>
+    </entity>
+    <entity name="Sleep" representedClassName="Sleep" syncable="YES" codeGenerationType="category">
+        <attribute name="end" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="note" attributeType="String" defaultValueString=""/>
+        <attribute name="place" attributeType="String" defaultValueString="bed"/>
+        <attribute name="start" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="feedings" toMany="YES" deletionRule="Cascade" destinationEntity="Feeding" inverseName="sleep" inverseEntity="Feeding"/>
+        <relationship name="kid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kid" inverseName="sleeps" inverseEntity="Kid"/>
+    </entity>
+    <entity name="Wake" representedClassName="Wake" syncable="YES" codeGenerationType="category">
+        <attribute name="end" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="note" attributeType="String" defaultValueString=""/>
+        <attribute name="start" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="feedings" toMany="YES" deletionRule="Cascade" destinationEntity="Feeding" inverseName="wake" inverseEntity="Feeding"/>
+        <relationship name="kid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kid" inverseName="wakes" inverseEntity="Kid"/>
+    </entity>
+</model>

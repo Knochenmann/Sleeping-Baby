@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F606C4C9291684DB00F009D1 /* NightTime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606C4C3291684DB00F009D1 /* NightTime+CoreDataClass.swift */; };
+		F606C4CD291684DB00F009D1 /* Wake+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606C4C7291684DB00F009D1 /* Wake+CoreDataClass.swift */; };
+		F6312C8129159AF600CD4C4E /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6312C8029159AF600CD4C4E /* CoreDataService.swift */; };
+		F6312CCF2915C65E00CD4C4E /* Sleeping_Baby.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6312CCD2915C65E00CD4C4E /* Sleeping_Baby.xcdatamodeld */; };
+		F6312CD12915CC6E00CD4C4E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6312CD02915CC6E00CD4C4E /* Logger.swift */; };
 		F6849C2B29158B6C006C9125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849C2A29158B6C006C9125 /* AppDelegate.swift */; };
 		F6849C2D29158B6C006C9125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849C2C29158B6C006C9125 /* SceneDelegate.swift */; };
 		F6849C2F29158B6C006C9125 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6849C2E29158B6C006C9125 /* TabBarController.swift */; };
 		F6849C3429158B6D006C9125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6849C3329158B6D006C9125 /* Assets.xcassets */; };
 		F6849C3729158B6D006C9125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6849C3529158B6D006C9125 /* LaunchScreen.storyboard */; };
 		F6849C3F29158E90006C9125 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F6849C3E29158E90006C9125 /* .gitignore */; };
+		F6C1999B2916E20E00437CD9 /* Sleep+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C199992916E20E00437CD9 /* Sleep+CoreDataClass.swift */; };
+		F6C5C62E291682F2002204E7 /* Feeding+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5C62C291682F2002204E7 /* Feeding+CoreDataClass.swift */; };
+		F6C5C632291683EC002204E7 /* Kid+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C5C630291683EC002204E7 /* Kid+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F606C4C3291684DB00F009D1 /* NightTime+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NightTime+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F606C4C7291684DB00F009D1 /* Wake+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wake+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F6312C8029159AF600CD4C4E /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		F6312CCE2915C65E00CD4C4E /* Sleeping_Baby.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sleeping_Baby.xcdatamodel; sourceTree = "<group>"; };
+		F6312CD02915CC6E00CD4C4E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F6849C2729158B6C006C9125 /* Sleeping Baby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleeping Baby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6849C2A29158B6C006C9125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6849C2C29158B6C006C9125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,9 @@
 		F6849C3629158B6D006C9125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6849C3829158B6D006C9125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6849C3E29158E90006C9125 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F6C199992916E20E00437CD9 /* Sleep+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sleep+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F6C5C62C291682F2002204E7 /* Feeding+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feeding+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F6C5C630291683EC002204E7 /* Kid+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kid+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6312C8229159AFE00CD4C4E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F6312C832915C4C800CD4C4E /* CoreDataService */,
+				F6312CD02915CC6E00CD4C4E /* Logger.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F6312C832915C4C800CD4C4E /* CoreDataService */ = {
+			isa = PBXGroup;
+			children = (
+				F6312C8029159AF600CD4C4E /* CoreDataService.swift */,
+				F6312CCD2915C65E00CD4C4E /* Sleeping_Baby.xcdatamodeld */,
+			);
+			path = CoreDataService;
+			sourceTree = "<group>";
+		};
+		F6312CD22915DA1200CD4C4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6312CD32915DA3100CD4C4E /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6312CD32915DA3100CD4C4E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F6C5C62C291682F2002204E7 /* Feeding+CoreDataClass.swift */,
+				F6C5C630291683EC002204E7 /* Kid+CoreDataClass.swift */,
+				F606C4C3291684DB00F009D1 /* NightTime+CoreDataClass.swift */,
+				F6C199992916E20E00437CD9 /* Sleep+CoreDataClass.swift */,
+				F606C4C7291684DB00F009D1 /* Wake+CoreDataClass.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		F6849C1E29158B6C006C9125 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				F6849C4429158F42006C9125 /* Components */,
+				F6312CD22915DA1200CD4C4E /* Models */,
 				F6849C4029158EC9006C9125 /* Scenes */,
+				F6312C8229159AFE00CD4C4E /* Services */,
 				F6849C4329158F0E006C9125 /* Settings */,
 			);
 			path = "Sleeping Baby";
@@ -178,9 +234,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6312C8129159AF600CD4C4E /* CoreDataService.swift in Sources */,
+				F606C4CD291684DB00F009D1 /* Wake+CoreDataClass.swift in Sources */,
+				F6312CD12915CC6E00CD4C4E /* Logger.swift in Sources */,
 				F6849C2F29158B6C006C9125 /* TabBarController.swift in Sources */,
 				F6849C2B29158B6C006C9125 /* AppDelegate.swift in Sources */,
+				F6C1999B2916E20E00437CD9 /* Sleep+CoreDataClass.swift in Sources */,
 				F6849C2D29158B6C006C9125 /* SceneDelegate.swift in Sources */,
+				F6C5C62E291682F2002204E7 /* Feeding+CoreDataClass.swift in Sources */,
+				F606C4C9291684DB00F009D1 /* NightTime+CoreDataClass.swift in Sources */,
+				F6C5C632291683EC002204E7 /* Kid+CoreDataClass.swift in Sources */,
+				F6312CCF2915C65E00CD4C4E /* Sleeping_Baby.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +468,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6312CCD2915C65E00CD4C4E /* Sleeping_Baby.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6312CCE2915C65E00CD4C4E /* Sleeping_Baby.xcdatamodel */,
+			);
+			currentVersion = F6312CCE2915C65E00CD4C4E /* Sleeping_Baby.xcdatamodel */;
+			path = Sleeping_Baby.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F6849C1F29158B6C006C9125 /* Project object */;
 }
